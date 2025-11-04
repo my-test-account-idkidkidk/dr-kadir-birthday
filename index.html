@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Our Professor 🌷</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- floating petals -->
+  <div class="petal" style="left:5%; animation-delay:0s;"></div>
+  <div class="petal" style="left:35%; animation-delay:3s; animation-duration:11s;"></div>
+  <div class="petal" style="left:70%; animation-delay:6s;"></div>
+
+  <!-- base garden background -->
+  <div class="garden-bg"></div>
+
+  <!-- intro screen -->
+  <div id="intro">
+    <h1>Happy Birthday, Professor 💜</h1>
+    <p>A small digital garden from your students — click below to see what we wrote for you.</p>
+    <button id="enterBtn">Enter the Garden</button>
+  </div>
+
+  <!-- main content -->
+  <main class="garden-wrapper">
+    <div class="header">
+      <h2>Your Garden of Gratitude</h2>
+      <p>Click any flower to read a note.</p>
+    </div>
+
+    <section id="garden">
+      <!-- flowers will be inserted dynamically -->
+      <div class="bouquet-ribbon"></div>
+    </section>
+  </main>
+
+  <!-- modal -->
+  <div id="modalBackdrop" role="dialog" aria-modal="true">
+    <div id="modal">
+      <button id="closeModal" aria-label="Close">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalMessage"></p>
+      <p id="modalFrom"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
